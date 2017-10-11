@@ -5,35 +5,34 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
-
-    <!-- My CSS -->
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 </head>
 
 <body>
     <div class="container">
         <div class="row mt-5">
             <div class="col text-center">
-                <label for="search wikipedia" class="display-4 mb-5">What would you like to learn about? Or how about learn something randomly?</label>
+                <label for="search wikipedia" class="display-4 mb-5 text-light">What would you like to learn about? How about pick something random?</label>
                 <div class="input-group">
                     <span class="input-group-btn">
-                          <button id="search-btn" class="btn btn-primary" type="button">Search for...</button>
-                        </span>
-                    <input type="text" class="form-control" placeholder="type your search term here" aria-label="search term">
+                        <button id="search-btn" class="btn btn-info" type="button">Search for...</button>
+                    </span>
+                    <input id="searchTerm" type="text" class="form-control" placeholder="type your search term here" aria-label="search term">
                     <span class="input-group-btn">
-                          <button id="random-btn" class="btn btn-success" type="button">Random!</button>
-                        </span>
+                        <a id="random-btn" href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-secondary" role="button">Random!</a>
+                    </span>
                 </div>
             </div>
         </div>
+        <div class="row m-5">
+            <div id="data" class="list-group">
+            </div>
+        </div>
     </div>
-
-
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
@@ -41,6 +40,8 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <!-- My JavaScript -->
     <script src="main.js"></script>
 </body>

@@ -1,6 +1,8 @@
-/* .row, .col, .col-6 {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    background-color: rgba(86,61,124,.15);
-    border: 1px solid rgba(86,61,124,.2);
-} */
+body {
+    background: black;
+}
+.display-4 {
+    font-size: 2.5rem;
+}
+
+
